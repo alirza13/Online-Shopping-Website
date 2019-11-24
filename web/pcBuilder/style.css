@@ -1,0 +1,71 @@
+#navbar {
+    background-color:  #001f3f;
+    z-index: 10;
+    margin-bottom: 0;
+}
+
+
+#builderAd{
+    background: #cccccc url("https://rocketleague.media.zestyio.com/rl_keyart_victory_crate_1920.jpg") no-repeat center fixed;
+    font-family: "Agency FB", Arial, Helvetica, sans-serif;
+    color: white;
+    height: 250px;
+}
+
+.container-fluid {
+    padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto
+}
+
+#head{
+    background-color: #001f3f;
+    height: 75px;
+    font-size: 50px;
+}
+
+#mainCont{
+    width: 75%;
+}
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.6;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: blue;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: blue;
+    cursor: pointer;
+}
+
+#shadowBox{
+    box-shadow: 10px 10px 5px grey;
+}

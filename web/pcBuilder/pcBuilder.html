@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PC Builder</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-static-top" id="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../homePage/homePage.html">WonderPC</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <!--<li class="active"><a href="../homePage/homePage.html">Home</a></li>-->
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Components <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">CPU</a></li>
+                    <li><a href="#">GPU</a></li>
+                    <li><a href="#">Motherboard</a></li>
+                    <li><a href="#">Case</a></li>
+                </ul>
+            </li>
+            <li><a href="#">On Sale</a></li>
+            <li><a href="#">PC Builder</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> User </a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
+
+        </ul>
+        <form class="navbar-form navbar-right">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" name="search">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</nav>
+
+<div class="container-fluid">
+        <div class="jumbotron" style= "text-align: center" id="builderAd">
+            <h1 style="font-size: 100px">PC Builder</h1>
+            <p style="font-size: 28px">A simple yet powerful pc building tool!</p>
+        </div>
+</div>
+
+<div class="container" id="mainCont">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-primary" id="shadowBox">
+                <div class="panel-heading text-center" id="head">What type of gamer are you? </div>
+                <div class="panel-body">
+                    <div class="col-lg-3" align="center"><label class="radio-inline"><input type="radio" name="optradio">Not a Gamer</label></div>
+                    <div class="col-lg-3" align="center"><label class="radio-inline"><input type="radio" name="optradio">Casual Gamer</label></div>
+                    <div class="col-lg-3" align="center"><label class="radio-inline"><input type="radio" name="optradio">Serious Gamer</label></div>
+                    <div class="col-lg-3" align="center"><label class="radio-inline"><input type="radio" name="optradio">Streamer</label></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="mainCont">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-primary" id="shadowBox">
+                <div class="panel-heading text-center" id="head">What is your budget?</div>
+                <div class="panel-body">
+                    <div class="range">
+                        <div class="slidecontainer">
+                            <div class="col-lg-10"><input type="range" min="1000" max="10000" value="2000" class="slider" step="50" id="myRange"></div>
+                            <div class="col-lg-2"><p>Budget: <span id="demo"></span></p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="mainCont">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-primary" id="shadowBox">
+                <div class="panel-heading text-center" id="head">Are you willing to invest in future proofing?</div>
+                <div class="panel-body">
+                    <div class="range">
+                        <div class="slidecontainer">
+                            <p class="text-center" style="font-size: 20px">Future proofing your PC means using parts that may be too powerful for you right now,
+                            in order to ensure that your computer can keep up with future software needs without needing an upgrade.</p>
+                            <div class="col-lg-6" align="center"><a class="btn btn-primary btn-sm notActive" data-title="true">I want to future proof</a></div>
+                            <div class="col-lg-6" align="center"><a class="btn btn-primary btn-sm notActive" data-title="false">I'd rather not</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+        output.innerHTML = this.value + " TL";
+    }
+</script>
+
+</body>
+</html>

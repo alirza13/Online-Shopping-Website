@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link href="css/catsyle.css" rel="stylesheet">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WonderPC</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Components <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">CPU</a></li>
+          <li><a href="#">GPU</a></li>
+          <li><a href="#">Motherboard</a></li>
+        </ul>
+      </li>
+      <li><a href="#">On Sale</a></li>
+      <li><a href="#">PC Builder</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> User </a></li>
+    </ul>
+    <form class="navbar-form navbar-right">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</nav>
+<br>
+<br>
+<div class="six">
+<div class="jumbotron">
+<div class="container">
+
+ <h5>Home &nbsp; >  &nbsp;Components CPUs / Processors  &nbsp;> &nbsp; Processors - Desktops</h5>
+  <h6 style="color:#00008B;"><strong> <u> PROCESSORS - DESKTOPS  </u> </strong> </h6>
+
+</div>	
+</div>
+
+<script>
+function togglecheckboxes(master,group){
+	var cbarray = document.getElementsByClassName(group);
+	for(var i = 0; i < cbarray.length; i++){
+		var cb = document.getElementById(cbarray[i].id);
+		cb.checked = master.checked;
+	}
+}
+</script>
+
+
+
+
+
+<script>
+$(document).ready(function () {
+    $('label.tree-toggler').click(function () {
+        $(this).parent().children('ul.tree').toggle(300);
+    });
+});
+</script>
+<br>
+<div class="container-fluid">
+
+<div class="row">
+<div class="col-md-3">
+
+        <div class="well" style="width:300px;" align:"left">
+            <div style="overflow-y: scroll; overflow-x: hidden; height: 500px;">
+                <ul class="nav nav-list">
+
+                    <li><label class="tree-toggler nav-header">Series</label>
+                      <hr class="half-rule"/>
+
+                        <ul class="nav nav-list tree">
+                          
+                           
+                            <li><label class="tree-toggler nav-header">  <i class="indicator fa fa-chevron-right" style="font-size:14px;"><a data-toggle="collapse" href="#menuPanelListGroup" >Intel Core i9</a></i></label>
+                              <input type="checkbox" id="cbgroup2_master pull-right" onchange="togglecheckboxes(this,'cbgroup2')" >
+                                <ul class="nav nav-list tree">
+                                   <input type="checkbox" id="cb2_1" class="cbgroup2" name="cbg2[]" value="1"> Core i9 X-Series<br>
+                             <input type="checkbox" id="cb2_2" class="cbgroup2" name="cbg2[]" value="2"> Core i9 X-Series Extreme Edition<br>
+                              <hr class="half-rule"/>
+                              </li>
+                            </ul>
+                            
+                            <li><label class="tree-toggler nav-header"><i class="indicator fa fa-chevron-right" style="font-size:14px;"><a data-toggle="collapse" href="#menuPanelListGroup" >Intel Core i7</a></i></label>
+
+                              <input type="checkbox" id="cbgroup1_master pull-right" onchange="togglecheckboxes(this,'cbgroup1')" >
+                                <ul class="nav nav-list tree">
+                                     <input type="checkbox" id="cb1_1" class="cbgroup1" name="cbg1[]" value="1"> Core i7 <br>
+                                <input type="checkbox" id="cb1_2" class="cbgroup1" name="cbg1[]" value="2"> Core i7 8th Gen <br>
+                                     <input type="checkbox" id="cb1_3" class="cbgroup1" name="cbg1[]" value="3"> Core i7 7th Gen<br>
+                                          <input type="checkbox" id="cb1_4" class="cbgroup1" name="cbg1[]" value="4"> Core i7 6th Gen<br>
+                                               <input type="checkbox" id="cb1_5" class="cbgroup1" name="cbg1[]" value="5"> Core i7 5th Gen<br>
+                                                    <input type="checkbox" id="cb1_6" class="cbgroup1" name="cbg1[]" value="6"> Core i7 4th Gen<br>
+                                                         <input type="checkbox" id="cb1_7" class="cbgroup1" name="cbg1[]" value="7"> Core i7 3rd Gen<br>
+                                                          <input type="checkbox" id="cb1_8" class="cbgroup1" name="cbg1[]" value="8"> Core i7 Extreme edition<br>
+                                                           <hr class="half-rule"/>
+                                        </ul>
+                                    
+
+                                    </li>
+                                     <li><label class="tree-toggler nav-header"><i class="indicator fa fa-chevron-right" style="font-size:14px;"><a data-toggle="collapse" href="#menuPanelListGroup" >Intel Core i5</a></i></label>
+
+                              <input type="checkbox" id="cbgroup3_master pull-right" onchange="togglecheckboxes(this,'cbgroup3')" >
+                                <ul class="nav nav-list tree">
+                                     <input type="checkbox" id="cb3_1" class="cbgroup3" name="cbg3[]" value="1"> Core i5 <br>
+                                <input type="checkbox" id="cb3_2" class="cbgroup3" name="cbg3[]" value="2"> Core i5 8th Gen <br>
+                                     <input type="checkbox" id="cb3_3" class="cbgroup3" name="cbg3[]" value="3"> Core i5 7th Gen<br>
+                                          <input type="checkbox" id="cb3_4" class="cbgroup3" name="cbg3[]" value="4"> Core i5 6th Gen<br>
+                                               <input type="checkbox" id="cb3_5" class="cbgroup3" name="cbg3[]" value="5"> Core i5 5th Gen<br>
+                                                    <input type="checkbox" id="cb3_6" class="cbgroup3" name="cbg3[]" value="6"> Core i5 4th Gen<br>
+                                                         <input type="checkbox" id="cb3_7" class="cbgroup3" name="cbg3[]" value="7"> Core i5 3rd Gen<br>
+                                                          <input type="checkbox" id="cb3_8" class="cbgroup3" name="cbg3[]" value="8"> Core i5 Extreme edition<br>
+                                                           <hr class="half-rule"/>
+                                        </ul>
+                                    
+
+                                    </li>
+                                     </li>
+                                     <li><label class="tree-toggler nav-header"><i class="indicator fa fa-chevron-right" style="font-size:14px;"><a data-toggle="collapse" href="#menuPanelListGroup" >Intel Core i3</a></i></label>
+
+                              <input type="checkbox" id="cbgroup4_master pull-right" onchange="togglecheckboxes(this,'cbgroup4')" >
+                                <ul class="nav nav-list tree">
+                                     <input type="checkbox" id="cb4_1" class="cbgroup4" name="cbg4[]" value="1"> Core i3 <br>
+                                <input type="checkbox" id="cb4_2" class="cbgroup4" name="cbg4[]" value="2"> Core i3 8th Gen <br>
+                                     <input type="checkbox" id="cb4_3" class="cbgroup4" name="cbg4[]" value="3"> Core i3 7th Gen<br>
+                                          <input type="checkbox" id="cb4_4" class="cbgroup4" name="cbg4[]" value="4"> Core i3 6th Gen<br>
+                                               <input type="checkbox" id="cb4_5" class="cbgroup4" name="cbg4[]" value="5"> Core i3 5th Gen<br>
+                                                    <input type="checkbox" id="cb4_6" class="cbgroup4" name="cbg4[]" value="6"> Core i3 4th Gen<br>
+                                                         <input type="checkbox" id="cb4_7" class="cbgroup4" name="cbg4[]" value="7"> Core i3 3rd Gen<br>
+                                                          <input type="checkbox" id="cb4_8" class="cbgroup4" name="cbg4[]" value="8"> Core i3 Extreme edition<br>
+                                                          
+                                        </ul>
+                                    
+
+                                    </li>
+                                    <hr class="half-rule"/>
+                        </ul>
+                          
+                    </li>
+                  
+                    <li><label class="tree-toggler nav-header">Manufacturer</label>
+                      <hr class="half-rule"/>
+                        <ul class="nav nav-list tree">
+                          <input type="checkbox"> Core i3 <br>
+                                <input type="checkbox" > Core i3 8th Gen <br>
+                                     <input type="checkbox" > Core i3 7th Gen<br>
+                                          <input type="checkbox" > Core i3 8th Gen <br>
+                                     <input type="checkbox" > Core i3 7th Gen<br>
+                                      <br>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li><label class="tree-toggler nav-header">Price</label>
+                                <ul class="nav nav-list tree">
+                                    <input type="checkbox"> $0 - $10 <br>
+                                    <input type="checkbox" > $10 - $25 <br>
+                                    <input type="checkbox" > $25 - $50<br>
+                                    <input type="checkbox" > $50 - $75 <br>
+                                    <input type="checkbox" > $75 - $100<br>
+                                    <input type="checkbox" > $100 - $200<br>
+                                 
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+  </div>
+
+  <div class="col-md-9">
+<div class="row">
+    <div class="col-md-3">
+      <a href="https://www.google.com/">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+          <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+          <div class="panel-footer text-center">3000 TL</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+   
+</div>
+</div>
+
+ <div class="panel-footer text-center">
+  <nav aria-label="Page navigation example" >
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+</div>
+
+
+
+
+</html>

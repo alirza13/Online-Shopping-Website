@@ -1,0 +1,55 @@
+ .six .jumbotron
+    { 
+   
+   
+    min-height:90px;
+    max-height:150px;
+    margin: 0 auto;
+    margin:0 auto;
+    margin-bottom: 0;
+    }
+.navbar {
+    margin-bottom:-50px;
+  }
+ .jumbotron h5{
+ margin-top:0%; 
+  left:10px;
+  font-size:15px;
+  color:black;
+  font-family: system-ui;
+
+}
+.jumbotron h6{
+ margin-top:3%; 
+  left:10px;
+  font-size:19px;
+  color:black;
+   font-family: system-ui;
+}
+.sidebarContent{
+margin-bottom:0px;
+margin-left: 15px;
+min-height:200px;
+background-color: silver;
+text-align:left;
+font-size: large;
+
+}
+#tree-toggler {
+  position: relative;
+}
+#cbgroup2_master {
+  position: absolute;
+  
+}
+.half-rule { 
+    margin-left: 0;
+    text-align: left;
+    width: 50%;
+ }
+
+
+
+
+
+

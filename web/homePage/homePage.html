@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Store</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="homePage.html">WonderPC</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <!--<li class="active"><a href="#">Home</a></li>-->
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Components <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">CPU</a></li>
+          <li><a href="#">GPU</a></li>
+          <li><a href="#">Motherboard</a></li>
+          <li><a href="#">Case</a></li>
+        </ul>
+      </li>
+      <li><a href="#">On Sale</a></li>
+      <li><a href="../pcBuilder/pcBuilder.html">PC Builder</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> User </a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
+
+    </ul>
+    <form class="navbar-form navbar-right">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</nav>
+
+<!--<div class="no-padding col-lg-12  col-md-12 col-sm-12 col-xs-12">-->
+  <!--<h2>Carousel Example</h2>-->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" style=" width:100%; height: 550px; !important;">
+      <div class="item active">
+        <a href="https://www.google.com/">
+          <img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" alt="Los Angeles" style="width:auto; height: 550px;">
+        </a>
+      </div>
+
+      <div class="item">
+        <img src="https://www.maingear.com/custom/desktops/r1/images/gallery/1.jpg" alt="Chicago" style="width:auto; height: 550px;">
+      </div>
+
+      <div class="item">
+        <img src="https://cdn.fstoppers.com/styles/full/s3/media/2015/12/lesson-14-hong-kong-victoria-peak-blend-after.jpg" alt="New york" style="width:auto; height: 550px;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+<!--</div>-->
+
+<div class="container-fluid" id="promotion" >
+  <h2>Promoted Items</h2>
+</div>
+
+<div class="container" >
+  <div class="row">
+
+    <div class="col-lg-3">
+      <a href="https://www.google.com/">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+          <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+          <div class="panel-footer text-center">3000 TL</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <a href="../pcBuilder/pcBuilder.html">
+    <div class="jumbotron" style= "text-align: center" id="builderAd">
+      <h1 style="font-size: 250px">PC Builder</h1>
+      <p style="font-size: 28px">A simple yet powerful pc building tool!</p>
+    </div>
+  </a>
+</div>
+
+</body>
+</html> 

@@ -1,0 +1,30 @@
+.carousel-inner img {
+    margin: auto;
+}
+
+#navbar {
+    /*background: #cccccc url("https://wallpaperstudio10.com/static/wpdb/wallpapers/3840x2160/172447.jpg") no-repeat center fixed;
+    background-size: cover;*/
+    background-color:  #001f3f;
+    z-index: 10;
+}
+
+.panel-footer {
+    color: darkblue;
+    font-size: 20px;
+}
+
+#promotion{
+    margin-left: 37px;
+    margin-top: 10px;
+}
+
+#builderAd{
+    background: #cccccc url("https://wallpaperstudio10.com/static/wpdb/wallpapers/3840x2160/172447.jpg") no-repeat center center;
+    font-family: "Agency FB", Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#head{
+    background-color: #001f3f;
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link href="css/catsyle.css" rel="stylesheet">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WonderPC</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Components <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">CPU</a></li>
+          <li><a href="#">GPU</a></li>
+          <li><a href="#">Motherboard</a></li>
+        </ul>
+      </li>
+      <li><a href="#">On Sale</a></li>
+      <li><a href="#">PC Builder</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> User </a></li>
+    </ul>
+    <form class="navbar-form navbar-right">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</nav>
+<br>
+<br>
+<div class="six">
+<div class="jumbotron">
+<div class="container">
+
+ <h5>Home &nbsp; >  &nbsp;On Sale</h5>
+  <h6 style="color:#00008B;"><strong> <u> "On Sale"  </u> </strong> </h6>
+
+</div>	
+</div>
+
+<script>
+function togglecheckboxes(master,group){
+	var cbarray = document.getElementsByClassName(group);
+	for(var i = 0; i < cbarray.length; i++){
+		var cb = document.getElementById(cbarray[i].id);
+		cb.checked = master.checked;
+	}
+}
+</script>
+
+
+
+
+
+<script>
+$(document).ready(function () {
+    $('label.tree-toggler').click(function () {
+        $(this).parent().children('ul.tree').toggle(300);
+    });
+});
+</script>
+<br>
+<div class="container-fluid">
+
+<div class="row">
+<div class="col-md-3">
+
+        <div class="well" style="width:300px;" align:"left">
+            <div style="overflow-y: scroll; overflow-x: hidden; height: 500px;">
+                <ul class="nav nav-list">
+
+                    <li><label class="tree-toggler nav-header">Department</label>
+                      <hr class="half-rule"/>
+
+                        <ul class="nav nav-list tree">
+                          
+                        
+                                    <input type="checkbox" > CPU <br>
+                                    <input type="checkbox" > GPU<br>
+                                    <input type="checkbox" > Motherboard <br>
+                                    <input type="checkbox" > Case<br>
+                                    
+                                    
+
+                                    </li>
+                                    <hr class="half-rule"/>
+                        </ul>
+                          
+                    </li>
+                  
+                    <li><label class="tree-toggler nav-header">Manufacturer</label>
+                      <hr class="half-rule"/>
+                        <ul class="nav nav-list tree">
+                          <input type="checkbox"> AMD <br>
+                                <input type="checkbox" > INTEL <br>
+                                     <input type="checkbox" > GEFORCE<br>
+                                          
+                                      <br>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                             <hr class="half-rule"/>
+                            
+                            <li><label class="tree-toggler nav-header">Price</label>
+                                <ul class="nav nav-list tree">
+                                    <input type="checkbox"> $0 - $10 <br>
+                                    <input type="checkbox" > $10 - $25 <br>
+                                    <input type="checkbox" > $25 - $50<br>
+                                    <input type="checkbox" > $50 - $75 <br>
+                                    <input type="checkbox" > $75 - $100<br>
+                                    <input type="checkbox" > $100 - $200<br>
+                                 
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+  </div>
+
+
+  <div class="col-md-9">
+<div class="row">
+    <div class="col-md-3">
+      <a href="https://www.google.com/">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+          <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+          <div class="panel-footer text-center">3000 TL</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center" id="head">MSI NVIDIA GeForce GTX 1070 ARMOR 8G </div>
+        <div class="panel-body"><img src="https://productimages.hepsiburada.net/s/0/500/9428580991026.jpg" class="img-responsive" style="width:80%" alt="Image"></div>
+        <div class="panel-footer text-center">3000 TL</div>
+      </div>
+    </div>
+   
+</div>
+</div>
+
+ <div class="panel-footer text-center">
+  <nav aria-label="Page navigation example" >
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+</div>
+
+
+
+
+</html>
